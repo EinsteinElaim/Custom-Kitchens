@@ -325,16 +325,7 @@
 
 
 
-        ' If ChkInstallKitchen.Checked = True Then
-        'to find the balance after deducting actual kitchen cost
-        'Dim budgetBalance As Integer = maximumBudget - selectedKitchenActualCost
-        'Dim installationAndAppliances As Integer = kitchenAppliancesTotal + selectedKitchenInstallationCost
-
-        'If budgetBalance > installationAndAppliances Then
-        ' budgetBalance - installationAndAppliances
-        'End If
-
-        'End If
+        
 
 
 
@@ -359,6 +350,19 @@
     End Sub
 
     Private Sub btnSelectKitchenAndAppliances_Click(sender As Object, e As EventArgs) Handles btnSelectKitchenAndAppliances.Click
+
+        Dim selectedKitchen As String = CboKitchenStyle.SelectedText
+        Dim validator As Boolean = False
+
+        If selectedKitchen.Contains(kitchenStyles(0)) Then
+            validator = True
+            'ElseIf selected Then
+        End If
+
+
+
+
+
         GroupBox1.Visible = True
     End Sub
 

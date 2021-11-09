@@ -29,13 +29,13 @@ Partial Class FrmCustomer_Detail
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.txtHouseNo = New System.Windows.Forms.TextBox()
+        Me.txtStreetName = New System.Windows.Forms.TextBox()
+        Me.txtTownCity = New System.Windows.Forms.TextBox()
+        Me.txtPostCode = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
+        Me.txtCreditCardNo = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnReceipt = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
@@ -104,65 +104,65 @@ Partial Class FrmCustomer_Detail
         Me.Label8.TabIndex = 7
         Me.Label8.Text = "Credit Card Number"
         '
-        'TextBox1
+        'txtName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(179, 28)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(180, 20)
-        Me.TextBox1.TabIndex = 8
+        Me.txtName.Location = New System.Drawing.Point(179, 28)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(180, 20)
+        Me.txtName.TabIndex = 8
         '
-        'TextBox3
+        'txtHouseNo
         '
-        Me.TextBox3.Location = New System.Drawing.Point(157, 37)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(180, 20)
-        Me.TextBox3.TabIndex = 10
+        Me.txtHouseNo.Location = New System.Drawing.Point(157, 37)
+        Me.txtHouseNo.Name = "txtHouseNo"
+        Me.txtHouseNo.Size = New System.Drawing.Size(180, 20)
+        Me.txtHouseNo.TabIndex = 10
         '
-        'TextBox4
+        'txtStreetName
         '
-        Me.TextBox4.Location = New System.Drawing.Point(157, 87)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(180, 20)
-        Me.TextBox4.TabIndex = 11
+        Me.txtStreetName.Location = New System.Drawing.Point(157, 87)
+        Me.txtStreetName.Name = "txtStreetName"
+        Me.txtStreetName.Size = New System.Drawing.Size(180, 20)
+        Me.txtStreetName.TabIndex = 11
         '
-        'TextBox5
+        'txtTownCity
         '
-        Me.TextBox5.Location = New System.Drawing.Point(157, 130)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(180, 20)
-        Me.TextBox5.TabIndex = 12
+        Me.txtTownCity.Location = New System.Drawing.Point(157, 130)
+        Me.txtTownCity.Name = "txtTownCity"
+        Me.txtTownCity.Size = New System.Drawing.Size(180, 20)
+        Me.txtTownCity.TabIndex = 12
         '
-        'TextBox6
+        'txtPostCode
         '
-        Me.TextBox6.Location = New System.Drawing.Point(157, 168)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(180, 20)
-        Me.TextBox6.TabIndex = 13
+        Me.txtPostCode.Location = New System.Drawing.Point(157, 168)
+        Me.txtPostCode.Name = "txtPostCode"
+        Me.txtPostCode.Size = New System.Drawing.Size(180, 20)
+        Me.txtPostCode.TabIndex = 13
         '
-        'TextBox7
+        'txtEmail
         '
-        Me.TextBox7.Location = New System.Drawing.Point(179, 288)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(180, 20)
-        Me.TextBox7.TabIndex = 14
+        Me.txtEmail.Location = New System.Drawing.Point(179, 288)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(180, 20)
+        Me.txtEmail.TabIndex = 14
         '
-        'TextBox8
+        'txtCreditCardNo
         '
-        Me.TextBox8.Location = New System.Drawing.Point(179, 331)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(180, 20)
-        Me.TextBox8.TabIndex = 15
+        Me.txtCreditCardNo.Location = New System.Drawing.Point(179, 331)
+        Me.txtCreditCardNo.Name = "txtCreditCardNo"
+        Me.txtCreditCardNo.Size = New System.Drawing.Size(180, 20)
+        Me.txtCreditCardNo.TabIndex = 15
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.txtStreetName)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
+        Me.GroupBox1.Controls.Add(Me.txtPostCode)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.txtTownCity)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.txtHouseNo)
         Me.GroupBox1.Location = New System.Drawing.Point(31, 66)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(355, 205)
@@ -186,9 +186,9 @@ Partial Class FrmCustomer_Detail
         Me.ClientSize = New System.Drawing.Size(942, 431)
         Me.Controls.Add(Me.btnReceipt)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtCreditCardNo)
+        Me.Controls.Add(Me.txtEmail)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label1)
@@ -207,13 +207,13 @@ Partial Class FrmCustomer_Detail
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
+    Friend WithEvents txtHouseNo As System.Windows.Forms.TextBox
+    Friend WithEvents txtStreetName As System.Windows.Forms.TextBox
+    Friend WithEvents txtTownCity As System.Windows.Forms.TextBox
+    Friend WithEvents txtPostCode As System.Windows.Forms.TextBox
+    Friend WithEvents txtEmail As System.Windows.Forms.TextBox
+    Friend WithEvents txtCreditCardNo As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents btnReceipt As System.Windows.Forms.Button
 End Class

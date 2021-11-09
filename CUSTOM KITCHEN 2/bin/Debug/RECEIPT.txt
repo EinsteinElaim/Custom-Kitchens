@@ -1,0 +1,15 @@
+﻿This is your Receipt of purchase.
+ 
+Name                    :           Einstein
+ 
+Your address is:
+House number            :           154
+Street name             :           Buru
+Town/City               :           Nairobi
+Post code               :           00100
+Email                   :           eelaim@gmail.com
+ 
+Credit card number      :           1234567812345678
+ 
+ 
+Total charges           :           
