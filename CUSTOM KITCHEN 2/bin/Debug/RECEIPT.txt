@@ -1,0 +1,57 @@
+﻿This is your Receipt of purchase.
+ 
+Name                    :           Einstein
+ 
+Your address is:
+    House number        :   154
+    Street name         :   Buruburu
+    Town/City           :   Nairobi
+    Post code           :   00100
+    Email               :   eeliam@gmail.com
+ 
+Credit card number      :           1234123412341234
+ 
+ 
+Total charges breakdown :
+Selected kitchen name & Layout          :   Medium L-shaped kitchen with Granite countertops
+ 
+Selected kitchen actual cost            :   £9500
+Selected kitchen installation cost      :   £2750
+Selected kitchen appliances cost        :   £400
+Selected kitchen shipping cost          :   £0
+ 
+ 
+Customer Total Budget   :           £20000
+Customer Balance        :           £7350
+ 
+ 
+Thank you for shopping with us!
+This is your Receipt of purchase.
+ 
+Name                    :           Einstein Eliam
+ 
+Your address is:
+    House number        :   154
+    Street name         :   Buruburu
+    Town/City           :   Nairobi
+    Post code           :   00100
+    Email               :   einsteineliam@gmail.com
+ 
+Credit card number      :           1234123412341234
+ 
+ 
+Total charges breakdown :
+Selected kitchen name & Layout          :   Medium L-shaped kitchen with Granite countertops
+ 
+Selected kitchen actual cost            :   £9500
+Selected kitchen installation cost      :   £0
+Selected kitchen appliances cost        :   £400
+Selected kitchen shipping cost          :   £95
+ 
+ 
+Customer Total Budget   :           £20000
+Customer Total Charge   :           £9995
+Customer Balance        :           £10005
+ 
+ 
+Thank you for shopping with us!

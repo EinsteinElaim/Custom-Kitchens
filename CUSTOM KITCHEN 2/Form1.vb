@@ -64,13 +64,13 @@
     }
 
     Public Shared shippingCost As Integer = 95
-    Dim maximumBudget As Integer
+    Public Shared shippingCostCharged As Boolean = False
+    Public Shared maximumBudget As Integer
     Public Shared selectedKitchenInstallationCost As Integer = 0
     Public Shared finalTotal As Integer = 0
     Public Shared selectedKitchenActualCost As Integer
     Public Shared kitchenAppliancesTotal As Integer
-
-
+    Public Shared selectedKitchenNameAndLayout As String
     Private Sub txtWidth_TextChanged(sender As Object, e As EventArgs) Handles txtWidth.TextChanged
 
     End Sub
@@ -255,9 +255,11 @@
 
         If ChkInstallKitchen.Checked Then
             MessageBox.Show("Selected kitchen Installation Cost is: £" + selectedKitchenInstallationCost.ToString())
+            shippingCostCharged = False
         Else
             selectedKitchenInstallationCost = 0
             MessageBox.Show("Your kitchen will not be installed by us. We will charge you a shipping cost of: £" + shippingCost.ToString)
+            shippingCostCharged = True
         End If
 
 
@@ -370,6 +372,8 @@
             selectedKitchenActualCost = counterTopsPricing(6, 2)
             selectedKitchenInstallationCost = kitchenInstallationCost(6)
         End If
+
+        selectedKitchenNameAndLayout = CboKitchenStyle.SelectedItem.ToString()
 
         MessageBox.Show("Selected kitchen layout & countertop total cost is: £" + selectedKitchenActualCost.ToString)
 
