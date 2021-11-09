@@ -67,6 +67,12 @@
 
     Dim maximumBudget As Integer
 
+    Public Shared selectedKitchenInstallationCost As Integer = 0
+
+    'Public Shared selectedKitchenActualCost As Integer = 0
+
+    Public Shared finalTotal As Integer = 0
+
     Private Sub txtWidth_TextChanged(sender As Object, e As EventArgs) Handles txtWidth.TextChanged
 
     End Sub
@@ -74,7 +80,7 @@
 
     End Sub
 
-    Private Sub CheckBox6_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox6.CheckedChanged
+    Private Sub CheckBox6_CheckedChanged(sender As Object, e As EventArgs) Handles ChkDishwasher.CheckedChanged
 
     End Sub
 
@@ -135,99 +141,141 @@
 
         'Kitchen layout as per Small Straight Kitchen Layout
         If Convert.ToInt64(length) >= dimensions(3, 0) And Convert.ToInt64(width) >= dimensions(3, 1) Then
-            CboKitchenStyle.Items.Add(kitchenStyles(3))
+            selectedKitchenInstallationCost = selectedKitchenInstallationCost + kitchenInstallationCost(3)
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(3, 0) Then
                 CboKitchenStyle.Items.Add(kitchenStyles(3) + " with " + counterTopNames(0) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(3, 0)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(3, 1) Then
-                CboKitchenStyle.Items.Add("Small straight kitchen with Wood Block countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(3) + " with " + counterTopNames(1) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(3, 1)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(3, 2) Then
-                CboKitchenStyle.Items.Add("Small straight kitchen with Granite countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(3) + " with " + counterTopNames(2) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(3, 2)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
         End If
 
         'Kitchen layout as per Small L-shaped Kitchen Layout
         If Convert.ToInt64(length) >= dimensions(0, 0) And Convert.ToInt64(width) >= dimensions(0, 1) Then
-            CboKitchenStyle.Items.Add(kitchenStyles(0))
+            selectedKitchenInstallationCost = selectedKitchenInstallationCost + kitchenInstallationCost(0)
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(0, 0) Then
-                CboKitchenStyle.Items.Add("Small L-shaped kitchen with Laminate countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(0) + " with " + counterTopNames(0) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(0, 0)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(0, 1) Then
-                CboKitchenStyle.Items.Add("Small L-shaped kitchen with Wood Block countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(0) + " with " + counterTopNames(1) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(0, 1)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(0, 2) Then
-                CboKitchenStyle.Items.Add("Small L-shaped kitchen with Granite countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(0) + " with " + counterTopNames(2) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(0, 2)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
         End If
 
         'Kitchen layout as per Medium Straight Kitchen Layout
         If Convert.ToInt64(length) >= dimensions(4, 0) And Convert.ToInt64(width) >= dimensions(4, 1) Then
-            CboKitchenStyle.Items.Add(kitchenStyles(4))
+            selectedKitchenInstallationCost = selectedKitchenInstallationCost + kitchenInstallationCost(4)
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(4, 0) Then
-                CboKitchenStyle.Items.Add("Medium Straight kitchen with Laminate countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(4) + " with " + counterTopNames(0) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(4, 0)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(4, 1) Then
-                CboKitchenStyle.Items.Add("Medium Straight kitchen with Wood Block countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(4) + " with " + counterTopNames(1) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(4, 1)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(4, 2) Then
-                CboKitchenStyle.Items.Add("Medium Straight kitchen with Granite countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(4) + " with " + counterTopNames(2) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(4, 2)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
         End If
 
         'Kitchen layout as per Medium L-shaped Kitchen Layout
         If Convert.ToInt64(length) >= dimensions(1, 0) And Convert.ToInt64(width) >= dimensions(1, 1) Then
-            CboKitchenStyle.Items.Add(kitchenStyles(1))
+            selectedKitchenInstallationCost = selectedKitchenInstallationCost + kitchenInstallationCost(1)
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(1, 0) Then
-                CboKitchenStyle.Items.Add("Medium L-shaped kitchen with Laminate countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(1) + " with " + counterTopNames(0) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(1, 0)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(1, 1) Then
-                CboKitchenStyle.Items.Add("Medium L-shaped kitchen with Wood Block countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(1) + " with " + counterTopNames(1) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(1, 1)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(1, 2) Then
-                CboKitchenStyle.Items.Add("Medium L-shaped kitchen with Granite countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(1) + " with " + counterTopNames(2) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(1, 2)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
         End If
 
         'Kitchen layout as per Large L-shaped Kitchen Layout
         If Convert.ToInt64(length) >= dimensions(2, 0) And Convert.ToInt64(width) >= dimensions(2, 1) Then
-            CboKitchenStyle.Items.Add(kitchenStyles(2))
+            selectedKitchenInstallationCost = selectedKitchenInstallationCost + kitchenInstallationCost(2)
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(2, 0) Then
-                CboKitchenStyle.Items.Add("Large L-shaped kitchen with Laminate countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(2) + " with " + counterTopNames(0) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(2, 0)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(2, 1) Then
-                CboKitchenStyle.Items.Add("Large L-shaped kitchen with Wood Block countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(2) + " with " + counterTopNames(1) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(2, 1)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(2, 2) Then
-                CboKitchenStyle.Items.Add("Large L-shaped kitchen with Granite countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(2) + " with " + counterTopNames(2) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(2, 2)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
         End If
 
         'Kitchen layout as per Large Straight Kitchen Layout
         If Convert.ToInt64(length) >= dimensions(5, 0) And Convert.ToInt64(width) >= dimensions(5, 1) Then
-            CboKitchenStyle.Items.Add(kitchenStyles(5))
+            selectedKitchenInstallationCost = selectedKitchenInstallationCost + kitchenInstallationCost(5)
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(5, 0) Then
-                CboKitchenStyle.Items.Add("Large Straight kitchen with Laminate countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(5) + " with " + counterTopNames(0) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(5, 0)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(5, 1) Then
-                CboKitchenStyle.Items.Add("Large Straight kitchen with Wood Block countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(5) + " with " + counterTopNames(1) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(5, 1)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(5, 2) Then
-                CboKitchenStyle.Items.Add("Large Straight kitchen with Granite countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(5) + " with " + counterTopNames(2) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(5, 2)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
         End If
 
         'Kitchen layout as per Large Island Kitchen Layout
         If Convert.ToInt64(length) >= dimensions(6, 0) And Convert.ToInt64(width) >= dimensions(6, 1) Then
-            CboKitchenStyle.Items.Add(kitchenStyles(6))
+            selectedKitchenInstallationCost = selectedKitchenInstallationCost + kitchenInstallationCost(6)
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(6, 0) Then
-                CboKitchenStyle.Items.Add("Large Island kitchen with Laminate countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(6) + " with " + counterTopNames(0) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(6, 0)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(6, 1) Then
-                CboKitchenStyle.Items.Add("Large Island kitchen with Wood Block countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(6) + " with " + counterTopNames(1) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(6, 1)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
             If Convert.ToInt64(maximumBudget) >= counterTopsPricing(6, 2) Then
-                CboKitchenStyle.Items.Add("Large Island kitchen with Granite countertops")
+                CboKitchenStyle.Items.Add(kitchenStyles(6) + " with " + counterTopNames(2) + " countertops")
+                Dim selectedKitchenActualCost As Integer = counterTopsPricing(6, 2)
+                MessageBox.Show(selectedKitchenActualCost)
             End If
         End If
 
@@ -245,12 +293,76 @@
     End Sub
 
     Private Sub btnPurchase_Click(sender As Object, e As EventArgs) Handles btnPurchase.Click
+
+
+
+
+
+        Dim kitchenAppliancesTotal As Integer = 0
+
+
+        If ChkBasicFridgeFreezer.Checked Then
+            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(0)
+        End If
+        If ChkAmericanStyleFridgeFreezer.Checked Then
+            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(1)
+        End If
+        If ChkHob.Checked Then
+            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(2)
+        End If
+        If ChkSingleOven.Checked Then
+            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(3)
+        End If
+        If ChkDoubleOven.Checked Then
+            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(4)
+        End If
+        If ChkDishwasher.Checked Then
+            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(5)
+        End If
+        MessageBox.Show(kitchenAppliancesTotal)
+
+
+
+
+
+        ' If ChkInstallKitchen.Checked = True Then
+        'to find the balance after deducting actual kitchen cost
+        'Dim budgetBalance As Integer = maximumBudget - selectedKitchenActualCost
+        'Dim installationAndAppliances As Integer = kitchenAppliancesTotal + selectedKitchenInstallationCost
+
+        'If budgetBalance > installationAndAppliances Then
+        ' budgetBalance - installationAndAppliances
+        'End If
+
+        'End If
+
+
+
+
+
+
+
+
+
+
         Me.Hide()
         FrmCustomer_Detail.Visible = True
 
     End Sub
 
     Private Sub CboCountertop_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        GroupBox1.Hide()
+    End Sub
+
+    Private Sub btnSelectKitchenAndAppliances_Click(sender As Object, e As EventArgs) Handles btnSelectKitchenAndAppliances.Click
+        GroupBox1.Visible = True
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
 
     End Sub
 End Class

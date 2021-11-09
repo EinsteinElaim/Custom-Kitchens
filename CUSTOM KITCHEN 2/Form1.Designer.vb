@@ -32,14 +32,15 @@ Partial Class Form1
         Me.lblKitchenStyle = New System.Windows.Forms.Label()
         Me.CboKitchenStyle = New System.Windows.Forms.ComboBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.ChkDishwasher = New System.Windows.Forms.CheckBox()
+        Me.ChkDoubleOven = New System.Windows.Forms.CheckBox()
+        Me.ChkSingleOven = New System.Windows.Forms.CheckBox()
+        Me.ChkHob = New System.Windows.Forms.CheckBox()
+        Me.ChkAmericanStyleFridgeFreezer = New System.Windows.Forms.CheckBox()
+        Me.ChkBasicFridgeFreezer = New System.Windows.Forms.CheckBox()
         Me.btnPurchase = New System.Windows.Forms.Button()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
+        Me.ChkInstallKitchen = New System.Windows.Forms.CheckBox()
+        Me.btnSelectKitchenAndAppliances = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -119,78 +120,78 @@ Partial Class Form1
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.CheckBox6)
-        Me.GroupBox1.Controls.Add(Me.CheckBox5)
-        Me.GroupBox1.Controls.Add(Me.CheckBox4)
-        Me.GroupBox1.Controls.Add(Me.CheckBox3)
-        Me.GroupBox1.Controls.Add(Me.CheckBox2)
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
+        Me.GroupBox1.Controls.Add(Me.ChkDishwasher)
+        Me.GroupBox1.Controls.Add(Me.ChkDoubleOven)
+        Me.GroupBox1.Controls.Add(Me.ChkSingleOven)
+        Me.GroupBox1.Controls.Add(Me.ChkHob)
+        Me.GroupBox1.Controls.Add(Me.ChkAmericanStyleFridgeFreezer)
+        Me.GroupBox1.Controls.Add(Me.ChkBasicFridgeFreezer)
         Me.GroupBox1.Location = New System.Drawing.Point(28, 272)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(424, 135)
+        Me.GroupBox1.Size = New System.Drawing.Size(424, 122)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Kitchen Appliances "
         '
-        'CheckBox6
+        'ChkDishwasher
         '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(209, 68)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(81, 17)
-        Me.CheckBox6.TabIndex = 5
-        Me.CheckBox6.Text = "Dishwasher"
-        Me.CheckBox6.UseVisualStyleBackColor = True
+        Me.ChkDishwasher.AutoSize = True
+        Me.ChkDishwasher.Location = New System.Drawing.Point(219, 80)
+        Me.ChkDishwasher.Name = "ChkDishwasher"
+        Me.ChkDishwasher.Size = New System.Drawing.Size(81, 17)
+        Me.ChkDishwasher.TabIndex = 5
+        Me.ChkDishwasher.Text = "Dishwasher"
+        Me.ChkDishwasher.UseVisualStyleBackColor = True
         '
-        'CheckBox5
+        'ChkDoubleOven
         '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(209, 44)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(89, 17)
-        Me.CheckBox5.TabIndex = 4
-        Me.CheckBox5.Text = "Double Oven"
-        Me.CheckBox5.UseVisualStyleBackColor = True
+        Me.ChkDoubleOven.AutoSize = True
+        Me.ChkDoubleOven.Location = New System.Drawing.Point(219, 56)
+        Me.ChkDoubleOven.Name = "ChkDoubleOven"
+        Me.ChkDoubleOven.Size = New System.Drawing.Size(89, 17)
+        Me.ChkDoubleOven.TabIndex = 4
+        Me.ChkDoubleOven.Text = "Double Oven"
+        Me.ChkDoubleOven.UseVisualStyleBackColor = True
         '
-        'CheckBox4
+        'ChkSingleOven
         '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(209, 20)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(84, 17)
-        Me.CheckBox4.TabIndex = 3
-        Me.CheckBox4.Text = "Single Oven"
-        Me.CheckBox4.UseVisualStyleBackColor = True
+        Me.ChkSingleOven.AutoSize = True
+        Me.ChkSingleOven.Location = New System.Drawing.Point(219, 32)
+        Me.ChkSingleOven.Name = "ChkSingleOven"
+        Me.ChkSingleOven.Size = New System.Drawing.Size(84, 17)
+        Me.ChkSingleOven.TabIndex = 3
+        Me.ChkSingleOven.Text = "Single Oven"
+        Me.ChkSingleOven.UseVisualStyleBackColor = True
         '
-        'CheckBox3
+        'ChkHob
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(7, 68)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(46, 17)
-        Me.CheckBox3.TabIndex = 2
-        Me.CheckBox3.Text = "Hob"
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.ChkHob.AutoSize = True
+        Me.ChkHob.Location = New System.Drawing.Point(17, 80)
+        Me.ChkHob.Name = "ChkHob"
+        Me.ChkHob.Size = New System.Drawing.Size(46, 17)
+        Me.ChkHob.TabIndex = 2
+        Me.ChkHob.Text = "Hob"
+        Me.ChkHob.UseVisualStyleBackColor = True
         '
-        'CheckBox2
+        'ChkAmericanStyleFridgeFreezer
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(7, 44)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(166, 17)
-        Me.CheckBox2.TabIndex = 1
-        Me.CheckBox2.Text = "American Style Fridge Freezer"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.ChkAmericanStyleFridgeFreezer.AutoSize = True
+        Me.ChkAmericanStyleFridgeFreezer.Location = New System.Drawing.Point(17, 56)
+        Me.ChkAmericanStyleFridgeFreezer.Name = "ChkAmericanStyleFridgeFreezer"
+        Me.ChkAmericanStyleFridgeFreezer.Size = New System.Drawing.Size(166, 17)
+        Me.ChkAmericanStyleFridgeFreezer.TabIndex = 1
+        Me.ChkAmericanStyleFridgeFreezer.Text = "American Style Fridge Freezer"
+        Me.ChkAmericanStyleFridgeFreezer.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'ChkBasicFridgeFreezer
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(7, 20)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(122, 17)
-        Me.CheckBox1.TabIndex = 0
-        Me.CheckBox1.Text = "Basic Fridge Freezer"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.ChkBasicFridgeFreezer.AutoSize = True
+        Me.ChkBasicFridgeFreezer.Location = New System.Drawing.Point(17, 32)
+        Me.ChkBasicFridgeFreezer.Name = "ChkBasicFridgeFreezer"
+        Me.ChkBasicFridgeFreezer.Size = New System.Drawing.Size(122, 17)
+        Me.ChkBasicFridgeFreezer.TabIndex = 0
+        Me.ChkBasicFridgeFreezer.Text = "Basic Fridge Freezer"
+        Me.ChkBasicFridgeFreezer.UseVisualStyleBackColor = True
         '
         'btnPurchase
         '
@@ -201,22 +202,32 @@ Partial Class Form1
         Me.btnPurchase.Text = "Purchase"
         Me.btnPurchase.UseVisualStyleBackColor = True
         '
-        'CheckBox7
+        'ChkInstallKitchen
         '
-        Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Location = New System.Drawing.Point(519, 242)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(138, 17)
-        Me.CheckBox7.TabIndex = 13
-        Me.CheckBox7.Text = "Installation Kitchen cost"
-        Me.CheckBox7.UseVisualStyleBackColor = True
+        Me.ChkInstallKitchen.AutoSize = True
+        Me.ChkInstallKitchen.Location = New System.Drawing.Point(519, 328)
+        Me.ChkInstallKitchen.Name = "ChkInstallKitchen"
+        Me.ChkInstallKitchen.Size = New System.Drawing.Size(137, 17)
+        Me.ChkInstallKitchen.TabIndex = 13
+        Me.ChkInstallKitchen.Text = "Install Selected Kitchen"
+        Me.ChkInstallKitchen.UseVisualStyleBackColor = True
+        '
+        'btnSelectKitchenAndAppliances
+        '
+        Me.btnSelectKitchenAndAppliances.Location = New System.Drawing.Point(502, 203)
+        Me.btnSelectKitchenAndAppliances.Name = "btnSelectKitchenAndAppliances"
+        Me.btnSelectKitchenAndAppliances.Size = New System.Drawing.Size(166, 23)
+        Me.btnSelectKitchenAndAppliances.TabIndex = 14
+        Me.btnSelectKitchenAndAppliances.Text = "Select Kitchen And Appliances"
+        Me.btnSelectKitchenAndAppliances.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(697, 485)
-        Me.Controls.Add(Me.CheckBox7)
+        Me.Controls.Add(Me.btnSelectKitchenAndAppliances)
+        Me.Controls.Add(Me.ChkInstallKitchen)
         Me.Controls.Add(Me.btnPurchase)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.CboKitchenStyle)
@@ -246,13 +257,14 @@ Partial Class Form1
     Friend WithEvents lblKitchenStyle As System.Windows.Forms.Label
     Friend WithEvents CboKitchenStyle As System.Windows.Forms.ComboBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents CheckBox6 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox5 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox4 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents ChkDishwasher As System.Windows.Forms.CheckBox
+    Friend WithEvents ChkDoubleOven As System.Windows.Forms.CheckBox
+    Friend WithEvents ChkSingleOven As System.Windows.Forms.CheckBox
+    Friend WithEvents ChkHob As System.Windows.Forms.CheckBox
+    Friend WithEvents ChkAmericanStyleFridgeFreezer As System.Windows.Forms.CheckBox
+    Friend WithEvents ChkBasicFridgeFreezer As System.Windows.Forms.CheckBox
     Friend WithEvents btnPurchase As System.Windows.Forms.Button
-    Friend WithEvents CheckBox7 As System.Windows.Forms.CheckBox
+    Friend WithEvents ChkInstallKitchen As System.Windows.Forms.CheckBox
+    Friend WithEvents btnSelectKitchenAndAppliances As System.Windows.Forms.Button
 
 End Class
