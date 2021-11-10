@@ -1,23 +1,7 @@
 ﻿Public Class FrmCustomer_Detail
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
 
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub FrmCustomer_Detail_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-
-
-        txtCreditCardNo.MaxLength = 16
-
-    End Sub
-
-    Private Sub btnReceipt_Click(sender As Object, e As EventArgs) Handles btnReceipt.Click
-
+    Public Function Receipt() As Integer
         Dim name As String = txtName.Text
         Dim houseNo As String = txtHouseNo.Text
         Dim streetName As String = txtStreetName.Text
@@ -34,13 +18,13 @@
         End If
 
 
-        
+
 
 
 
 
         Dim file As System.IO.StreamWriter
-        file = My.Computer.FileSystem.OpenTextFileWriter("RECEIPT.txt", True)
+        file = My.Computer.FileSystem.OpenTextFileWriter("KitchenReceipt.txt", True)
 
         file.WriteLine("This is your Receipt of purchase.")
         file.WriteLine(" ")
@@ -92,5 +76,29 @@
 
 
         file.Close()
+
+        Return 0
+    End Function
+
+
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub FrmCustomer_Detail_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
+
+        txtCreditCardNo.MaxLength = 16
+
+    End Sub
+
+    Private Sub btnReceipt_Click(sender As Object, e As EventArgs) Handles btnReceipt.Click
+        Receipt()
     End Sub
 End Class

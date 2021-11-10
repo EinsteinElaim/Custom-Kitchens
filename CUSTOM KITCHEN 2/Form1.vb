@@ -63,14 +63,64 @@
         4750
     }
 
-    Public Shared shippingCost As Integer = 95
+    Public Shared shippingCost As Integer
     Public Shared shippingCostCharged As Boolean = False
     Public Shared maximumBudget As Integer
-    Public Shared selectedKitchenInstallationCost As Integer = 0
-    Public Shared finalTotal As Integer = 0
+    Public Shared selectedKitchenInstallationCost As Integer
+    Public Shared finalTotal As Integer
     Public Shared selectedKitchenActualCost As Integer
     Public Shared kitchenAppliancesTotal As Integer
     Public Shared selectedKitchenNameAndLayout As String
+
+
+
+
+    Public Function Purchase()
+        kitchenAppliancesTotal = 0
+
+
+        If ChkBasicFridgeFreezer.Checked Then
+            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(0)
+        End If
+        If ChkAmericanStyleFridgeFreezer.Checked Then
+            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(1)
+        End If
+        If ChkHob.Checked Then
+            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(2)
+        End If
+        If ChkSingleOven.Checked Then
+            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(3)
+        End If
+        If ChkDoubleOven.Checked Then
+            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(4)
+        End If
+        If ChkDishwasher.Checked Then
+            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(5)
+        End If
+
+
+        If ChkInstallKitchen.Checked Then
+            MessageBox.Show("Selected kitchen Installation Cost is: £" + selectedKitchenInstallationCost.ToString())
+            shippingCostCharged = False
+        Else
+            selectedKitchenInstallationCost = 0
+            MessageBox.Show("Your kitchen will not be installed by us. We will charge you a shipping cost of: £" + shippingCost.ToString)
+            shippingCostCharged = True
+        End If
+
+
+        MessageBox.Show("Selected kitchen appliances cost is: £" + kitchenAppliancesTotal.ToString)
+
+
+        Me.Hide()
+        FrmCustomer_Detail.Visible = True
+
+        Return 0
+
+    End Function
+
+
+
     Private Sub txtWidth_TextChanged(sender As Object, e As EventArgs) Handles txtWidth.TextChanged
 
     End Sub
@@ -228,48 +278,7 @@
     End Sub
 
     Private Sub btnPurchase_Click(sender As Object, e As EventArgs) Handles btnPurchase.Click
-
-
-        kitchenAppliancesTotal = 0
-
-
-        If ChkBasicFridgeFreezer.Checked Then
-            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(0)
-        End If
-        If ChkAmericanStyleFridgeFreezer.Checked Then
-            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(1)
-        End If
-        If ChkHob.Checked Then
-            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(2)
-        End If
-        If ChkSingleOven.Checked Then
-            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(3)
-        End If
-        If ChkDoubleOven.Checked Then
-            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(4)
-        End If
-        If ChkDishwasher.Checked Then
-            kitchenAppliancesTotal = kitchenAppliancesTotal + kitchenAppliancesPrices(5)
-        End If
-
-
-        If ChkInstallKitchen.Checked Then
-            MessageBox.Show("Selected kitchen Installation Cost is: £" + selectedKitchenInstallationCost.ToString())
-            shippingCostCharged = False
-        Else
-            selectedKitchenInstallationCost = 0
-            MessageBox.Show("Your kitchen will not be installed by us. We will charge you a shipping cost of: £" + shippingCost.ToString)
-            shippingCostCharged = True
-        End If
-
-
-        MessageBox.Show("Selected kitchen appliances cost is: £" + kitchenAppliancesTotal.ToString)
-
-
-        Me.Hide()
-        FrmCustomer_Detail.Visible = True
-
-
+        Purchase()
     End Sub
 
     Private Sub CboCountertop_SelectedIndexChanged(sender As Object, e As EventArgs)
@@ -278,6 +287,9 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GroupBox1.Hide()
+        shippingCost = 95
+        selectedKitchenInstallationCost = 0
+        finalTotal = 0
     End Sub
 
     Private Sub btnSelectKitchenAndAppliances_Click(sender As Object, e As EventArgs) Handles btnSelectKitchenAndAppliances.Click

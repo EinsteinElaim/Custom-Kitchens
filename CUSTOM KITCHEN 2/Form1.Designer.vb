@@ -121,6 +121,8 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.ChkDishwasher)
+        Me.GroupBox1.Controls.Add(Me.btnPurchase)
+        Me.GroupBox1.Controls.Add(Me.ChkInstallKitchen)
         Me.GroupBox1.Controls.Add(Me.ChkDoubleOven)
         Me.GroupBox1.Controls.Add(Me.ChkSingleOven)
         Me.GroupBox1.Controls.Add(Me.ChkHob)
@@ -128,7 +130,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.ChkBasicFridgeFreezer)
         Me.GroupBox1.Location = New System.Drawing.Point(28, 272)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(424, 122)
+        Me.GroupBox1.Size = New System.Drawing.Size(640, 153)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Kitchen Appliances "
@@ -195,7 +197,7 @@ Partial Class Form1
         '
         'btnPurchase
         '
-        Me.btnPurchase.Location = New System.Drawing.Point(519, 426)
+        Me.btnPurchase.Location = New System.Drawing.Point(474, 80)
         Me.btnPurchase.Name = "btnPurchase"
         Me.btnPurchase.Size = New System.Drawing.Size(75, 47)
         Me.btnPurchase.TabIndex = 12
@@ -205,7 +207,7 @@ Partial Class Form1
         'ChkInstallKitchen
         '
         Me.ChkInstallKitchen.AutoSize = True
-        Me.ChkInstallKitchen.Location = New System.Drawing.Point(519, 328)
+        Me.ChkInstallKitchen.Location = New System.Drawing.Point(474, 32)
         Me.ChkInstallKitchen.Name = "ChkInstallKitchen"
         Me.ChkInstallKitchen.Size = New System.Drawing.Size(137, 17)
         Me.ChkInstallKitchen.TabIndex = 13
@@ -218,7 +220,7 @@ Partial Class Form1
         Me.btnSelectKitchenAndAppliances.Name = "btnSelectKitchenAndAppliances"
         Me.btnSelectKitchenAndAppliances.Size = New System.Drawing.Size(166, 23)
         Me.btnSelectKitchenAndAppliances.TabIndex = 14
-        Me.btnSelectKitchenAndAppliances.Text = "Select Kitchen And Appliances"
+        Me.btnSelectKitchenAndAppliances.Text = "Select Kitchen"
         Me.btnSelectKitchenAndAppliances.UseVisualStyleBackColor = True
         '
         'Form1
@@ -227,8 +229,6 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(697, 485)
         Me.Controls.Add(Me.btnSelectKitchenAndAppliances)
-        Me.Controls.Add(Me.ChkInstallKitchen)
-        Me.Controls.Add(Me.btnPurchase)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.CboKitchenStyle)
         Me.Controls.Add(Me.lblKitchenStyle)
