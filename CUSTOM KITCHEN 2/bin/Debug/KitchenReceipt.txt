@@ -56,3 +56,61 @@ Customer Balance        :           £7350
  
  
 Thank you for shopping with us!
+This is your Receipt of purchase.
+ 
+Name                    :           754
+ 
+Your address is:
+    House number        :   
+    Street name         :   
+    Town/City           :   
+    Post code           :   
+    Email               :   15242
+ 
+Credit card number      :           4521775457645545
+ 
+ 
+Total charges breakdown :
+Selected kitchen name & Layout          :   Small straight kitchen with Laminate countertops
+ 
+Selected kitchen actual cost            :   £1000
+Selected kitchen installation cost      :   £750
+Selected kitchen appliances cost        :   £400
+Selected kitchen shipping cost          :   £0
+ 
+ 
+Customer Total Budget   :           £1000
+Customer Total Charge   :           £2150
+Customer Deficit        :           £1150
+ 
+ 
+Thank you for shopping with us!
+This is your Receipt of purchase.
+ 
+Name                    :           Type names here!
+ 
+Your address is:
+    House number        :   Type house number here!
+    Street name         :   Type street name here!
+    Town/City           :   Type town/city name here!
+    Post code           :   Type post code here!
+    Email               :   Type your email here!
+ 
+Credit card number      :           1234123412341234
+ 
+ 
+Total charges breakdown :
+Selected kitchen name & Layout          :   Small straight kitchen with Laminate countertops
+ 
+Selected kitchen actual cost            :   £1000
+Selected kitchen installation cost      :   £750
+Selected kitchen appliances cost        :   £0
+Selected kitchen shipping cost          :   £0
+ 
+ 
+Customer Total Budget   :           £1000
+Customer Total Charge   :           £1750
+Customer Deficit        :           £750
+ 
+ 
+Thank you for shopping with us!

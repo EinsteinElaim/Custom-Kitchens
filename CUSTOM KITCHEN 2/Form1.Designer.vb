@@ -33,13 +33,13 @@ Partial Class Form1
         Me.CboKitchenStyle = New System.Windows.Forms.ComboBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.ChkDishwasher = New System.Windows.Forms.CheckBox()
+        Me.btnPurchase = New System.Windows.Forms.Button()
+        Me.ChkInstallKitchen = New System.Windows.Forms.CheckBox()
         Me.ChkDoubleOven = New System.Windows.Forms.CheckBox()
         Me.ChkSingleOven = New System.Windows.Forms.CheckBox()
         Me.ChkHob = New System.Windows.Forms.CheckBox()
         Me.ChkAmericanStyleFridgeFreezer = New System.Windows.Forms.CheckBox()
         Me.ChkBasicFridgeFreezer = New System.Windows.Forms.CheckBox()
-        Me.btnPurchase = New System.Windows.Forms.Button()
-        Me.ChkInstallKitchen = New System.Windows.Forms.CheckBox()
         Me.btnSelectKitchenAndAppliances = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -47,75 +47,85 @@ Partial Class Form1
         'lblLength
         '
         Me.lblLength.AutoSize = True
-        Me.lblLength.Location = New System.Drawing.Point(25, 30)
+        Me.lblLength.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLength.Location = New System.Drawing.Point(25, 27)
         Me.lblLength.Name = "lblLength"
-        Me.lblLength.Size = New System.Drawing.Size(40, 13)
+        Me.lblLength.Size = New System.Drawing.Size(65, 19)
         Me.lblLength.TabIndex = 0
         Me.lblLength.Text = "Length"
         '
         'lblWidth
         '
         Me.lblWidth.AutoSize = True
-        Me.lblWidth.Location = New System.Drawing.Point(25, 56)
+        Me.lblWidth.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWidth.Location = New System.Drawing.Point(25, 59)
         Me.lblWidth.Name = "lblWidth"
-        Me.lblWidth.Size = New System.Drawing.Size(35, 13)
+        Me.lblWidth.Size = New System.Drawing.Size(60, 19)
         Me.lblWidth.TabIndex = 1
         Me.lblWidth.Text = "Width"
         '
         'lblMaximumBudget
         '
         Me.lblMaximumBudget.AutoSize = True
-        Me.lblMaximumBudget.Location = New System.Drawing.Point(24, 82)
+        Me.lblMaximumBudget.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMaximumBudget.Location = New System.Drawing.Point(25, 91)
         Me.lblMaximumBudget.Name = "lblMaximumBudget"
-        Me.lblMaximumBudget.Size = New System.Drawing.Size(88, 13)
+        Me.lblMaximumBudget.Size = New System.Drawing.Size(149, 19)
         Me.lblMaximumBudget.TabIndex = 2
         Me.lblMaximumBudget.Text = "Maximum Budget"
         '
         'txtLength
         '
-        Me.txtLength.Location = New System.Drawing.Point(198, 30)
+        Me.txtLength.Font = New System.Drawing.Font("Buxton Sketch", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtLength.Location = New System.Drawing.Point(198, 24)
         Me.txtLength.Name = "txtLength"
-        Me.txtLength.Size = New System.Drawing.Size(100, 20)
+        Me.txtLength.Size = New System.Drawing.Size(160, 27)
         Me.txtLength.TabIndex = 3
         '
         'txtWidth
         '
+        Me.txtWidth.Font = New System.Drawing.Font("Buxton Sketch", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtWidth.Location = New System.Drawing.Point(198, 56)
         Me.txtWidth.Name = "txtWidth"
-        Me.txtWidth.Size = New System.Drawing.Size(100, 20)
+        Me.txtWidth.Size = New System.Drawing.Size(160, 27)
         Me.txtWidth.TabIndex = 4
         '
         'txtMaximumBudget
         '
-        Me.txtMaximumBudget.Location = New System.Drawing.Point(198, 82)
+        Me.txtMaximumBudget.Font = New System.Drawing.Font("Buxton Sketch", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMaximumBudget.Location = New System.Drawing.Point(198, 88)
         Me.txtMaximumBudget.Name = "txtMaximumBudget"
-        Me.txtMaximumBudget.Size = New System.Drawing.Size(100, 20)
+        Me.txtMaximumBudget.Size = New System.Drawing.Size(160, 27)
         Me.txtMaximumBudget.TabIndex = 5
         '
         'btnEnterSpecification
         '
-        Me.btnEnterSpecification.Location = New System.Drawing.Point(12, 132)
+        Me.btnEnterSpecification.BackColor = System.Drawing.Color.Violet
+        Me.btnEnterSpecification.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEnterSpecification.Location = New System.Drawing.Point(45, 139)
         Me.btnEnterSpecification.Name = "btnEnterSpecification"
-        Me.btnEnterSpecification.Size = New System.Drawing.Size(84, 51)
+        Me.btnEnterSpecification.Size = New System.Drawing.Size(161, 51)
         Me.btnEnterSpecification.TabIndex = 6
         Me.btnEnterSpecification.Text = "Enter Specification"
-        Me.btnEnterSpecification.UseVisualStyleBackColor = True
+        Me.btnEnterSpecification.UseVisualStyleBackColor = False
         '
         'lblKitchenStyle
         '
         Me.lblKitchenStyle.AutoSize = True
+        Me.lblKitchenStyle.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblKitchenStyle.Location = New System.Drawing.Point(24, 208)
         Me.lblKitchenStyle.Name = "lblKitchenStyle"
-        Me.lblKitchenStyle.Size = New System.Drawing.Size(157, 13)
+        Me.lblKitchenStyle.Size = New System.Drawing.Size(273, 19)
         Me.lblKitchenStyle.TabIndex = 7
         Me.lblKitchenStyle.Text = "Kitchen Style And Countertops :"
         '
         'CboKitchenStyle
         '
+        Me.CboKitchenStyle.Font = New System.Drawing.Font("Buxton Sketch", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CboKitchenStyle.FormattingEnabled = True
-        Me.CboKitchenStyle.Location = New System.Drawing.Point(198, 205)
+        Me.CboKitchenStyle.Location = New System.Drawing.Point(303, 205)
         Me.CboKitchenStyle.Name = "CboKitchenStyle"
-        Me.CboKitchenStyle.Size = New System.Drawing.Size(266, 21)
+        Me.CboKitchenStyle.Size = New System.Drawing.Size(396, 28)
         Me.CboKitchenStyle.TabIndex = 9
         '
         'GroupBox1
@@ -128,9 +138,10 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.ChkHob)
         Me.GroupBox1.Controls.Add(Me.ChkAmericanStyleFridgeFreezer)
         Me.GroupBox1.Controls.Add(Me.ChkBasicFridgeFreezer)
+        Me.GroupBox1.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(28, 272)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(640, 153)
+        Me.GroupBox1.Size = New System.Drawing.Size(862, 153)
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Kitchen Appliances "
@@ -138,19 +149,39 @@ Partial Class Form1
         'ChkDishwasher
         '
         Me.ChkDishwasher.AutoSize = True
-        Me.ChkDishwasher.Location = New System.Drawing.Point(219, 80)
+        Me.ChkDishwasher.Location = New System.Drawing.Point(311, 80)
         Me.ChkDishwasher.Name = "ChkDishwasher"
-        Me.ChkDishwasher.Size = New System.Drawing.Size(81, 17)
+        Me.ChkDishwasher.Size = New System.Drawing.Size(127, 23)
         Me.ChkDishwasher.TabIndex = 5
         Me.ChkDishwasher.Text = "Dishwasher"
         Me.ChkDishwasher.UseVisualStyleBackColor = True
         '
+        'btnPurchase
+        '
+        Me.btnPurchase.BackColor = System.Drawing.Color.Violet
+        Me.btnPurchase.Location = New System.Drawing.Point(602, 80)
+        Me.btnPurchase.Name = "btnPurchase"
+        Me.btnPurchase.Size = New System.Drawing.Size(133, 47)
+        Me.btnPurchase.TabIndex = 12
+        Me.btnPurchase.Text = "Purchase"
+        Me.btnPurchase.UseVisualStyleBackColor = False
+        '
+        'ChkInstallKitchen
+        '
+        Me.ChkInstallKitchen.AutoSize = True
+        Me.ChkInstallKitchen.Location = New System.Drawing.Point(602, 32)
+        Me.ChkInstallKitchen.Name = "ChkInstallKitchen"
+        Me.ChkInstallKitchen.Size = New System.Drawing.Size(219, 23)
+        Me.ChkInstallKitchen.TabIndex = 13
+        Me.ChkInstallKitchen.Text = "Install Selected Kitchen"
+        Me.ChkInstallKitchen.UseVisualStyleBackColor = True
+        '
         'ChkDoubleOven
         '
         Me.ChkDoubleOven.AutoSize = True
-        Me.ChkDoubleOven.Location = New System.Drawing.Point(219, 56)
+        Me.ChkDoubleOven.Location = New System.Drawing.Point(311, 56)
         Me.ChkDoubleOven.Name = "ChkDoubleOven"
-        Me.ChkDoubleOven.Size = New System.Drawing.Size(89, 17)
+        Me.ChkDoubleOven.Size = New System.Drawing.Size(131, 23)
         Me.ChkDoubleOven.TabIndex = 4
         Me.ChkDoubleOven.Text = "Double Oven"
         Me.ChkDoubleOven.UseVisualStyleBackColor = True
@@ -158,9 +189,9 @@ Partial Class Form1
         'ChkSingleOven
         '
         Me.ChkSingleOven.AutoSize = True
-        Me.ChkSingleOven.Location = New System.Drawing.Point(219, 32)
+        Me.ChkSingleOven.Location = New System.Drawing.Point(311, 32)
         Me.ChkSingleOven.Name = "ChkSingleOven"
-        Me.ChkSingleOven.Size = New System.Drawing.Size(84, 17)
+        Me.ChkSingleOven.Size = New System.Drawing.Size(123, 23)
         Me.ChkSingleOven.TabIndex = 3
         Me.ChkSingleOven.Text = "Single Oven"
         Me.ChkSingleOven.UseVisualStyleBackColor = True
@@ -170,7 +201,7 @@ Partial Class Form1
         Me.ChkHob.AutoSize = True
         Me.ChkHob.Location = New System.Drawing.Point(17, 80)
         Me.ChkHob.Name = "ChkHob"
-        Me.ChkHob.Size = New System.Drawing.Size(46, 17)
+        Me.ChkHob.Size = New System.Drawing.Size(61, 23)
         Me.ChkHob.TabIndex = 2
         Me.ChkHob.Text = "Hob"
         Me.ChkHob.UseVisualStyleBackColor = True
@@ -180,7 +211,7 @@ Partial Class Form1
         Me.ChkAmericanStyleFridgeFreezer.AutoSize = True
         Me.ChkAmericanStyleFridgeFreezer.Location = New System.Drawing.Point(17, 56)
         Me.ChkAmericanStyleFridgeFreezer.Name = "ChkAmericanStyleFridgeFreezer"
-        Me.ChkAmericanStyleFridgeFreezer.Size = New System.Drawing.Size(166, 17)
+        Me.ChkAmericanStyleFridgeFreezer.Size = New System.Drawing.Size(274, 23)
         Me.ChkAmericanStyleFridgeFreezer.TabIndex = 1
         Me.ChkAmericanStyleFridgeFreezer.Text = "American Style Fridge Freezer"
         Me.ChkAmericanStyleFridgeFreezer.UseVisualStyleBackColor = True
@@ -190,33 +221,15 @@ Partial Class Form1
         Me.ChkBasicFridgeFreezer.AutoSize = True
         Me.ChkBasicFridgeFreezer.Location = New System.Drawing.Point(17, 32)
         Me.ChkBasicFridgeFreezer.Name = "ChkBasicFridgeFreezer"
-        Me.ChkBasicFridgeFreezer.Size = New System.Drawing.Size(122, 17)
+        Me.ChkBasicFridgeFreezer.Size = New System.Drawing.Size(192, 23)
         Me.ChkBasicFridgeFreezer.TabIndex = 0
         Me.ChkBasicFridgeFreezer.Text = "Basic Fridge Freezer"
         Me.ChkBasicFridgeFreezer.UseVisualStyleBackColor = True
         '
-        'btnPurchase
-        '
-        Me.btnPurchase.Location = New System.Drawing.Point(474, 80)
-        Me.btnPurchase.Name = "btnPurchase"
-        Me.btnPurchase.Size = New System.Drawing.Size(75, 47)
-        Me.btnPurchase.TabIndex = 12
-        Me.btnPurchase.Text = "Purchase"
-        Me.btnPurchase.UseVisualStyleBackColor = True
-        '
-        'ChkInstallKitchen
-        '
-        Me.ChkInstallKitchen.AutoSize = True
-        Me.ChkInstallKitchen.Location = New System.Drawing.Point(474, 32)
-        Me.ChkInstallKitchen.Name = "ChkInstallKitchen"
-        Me.ChkInstallKitchen.Size = New System.Drawing.Size(137, 17)
-        Me.ChkInstallKitchen.TabIndex = 13
-        Me.ChkInstallKitchen.Text = "Install Selected Kitchen"
-        Me.ChkInstallKitchen.UseVisualStyleBackColor = True
-        '
         'btnSelectKitchenAndAppliances
         '
-        Me.btnSelectKitchenAndAppliances.Location = New System.Drawing.Point(502, 203)
+        Me.btnSelectKitchenAndAppliances.Font = New System.Drawing.Font("Cooper Black", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSelectKitchenAndAppliances.Location = New System.Drawing.Point(724, 206)
         Me.btnSelectKitchenAndAppliances.Name = "btnSelectKitchenAndAppliances"
         Me.btnSelectKitchenAndAppliances.Size = New System.Drawing.Size(166, 23)
         Me.btnSelectKitchenAndAppliances.TabIndex = 14
@@ -227,7 +240,8 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(697, 485)
+        Me.BackColor = System.Drawing.Color.SkyBlue
+        Me.ClientSize = New System.Drawing.Size(902, 485)
         Me.Controls.Add(Me.btnSelectKitchenAndAppliances)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.CboKitchenStyle)
