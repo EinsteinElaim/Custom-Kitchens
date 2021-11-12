@@ -55,15 +55,15 @@
 
 
         Dim newFile As String = "C:\Users\EINSTEIN\Desktop\Receipt\KitchenReceipt.txt"
-        Dim file1 As New IO.StreamWriter(newFile, True)
-        file1.WriteLine("Example")
-        file1.Close()
+        Dim file As New IO.StreamWriter(newFile, True)
+        file.WriteLine("Example")
+        'file1.Close()
 
 
         'Creating variable that holds streamwriter that allows user to create files and edit them as well as open files in custom directories
-        Dim file As System.IO.StreamWriter
+        'Dim file As System.IO.StreamWriter
         'Naming the creating, editing and naming the receipt 
-        file = My.Computer.FileSystem.OpenTextFileWriter("KitchenReceipt.txt", True)
+        'file = My.Computer.FileSystem.OpenTextFileWriter("KitchenReceipt.txt", True)
 
         'filling the receipt
         file.WriteLine("This is your Receipt of purchase.")
