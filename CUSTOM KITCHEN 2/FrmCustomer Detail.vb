@@ -8,28 +8,28 @@
         If txtName.Text = "" Then
             MessageBox.Show("You must enter your name!")
             txtName.Text = "Type names here!"
-        End If
-        If txtHouseNo.Text = "" Then
+            'End If
+        ElseIf txtHouseNo.Text = "" Then
             MessageBox.Show("You must enter your house number!")
             txtHouseNo.Text = "Type house number here!"
-        End If
-        If txtStreetName.Text = "" Then
+            'End If
+        ElseIf txtStreetName.Text = "" Then
             MessageBox.Show("You must enter your street name!")
             txtStreetName.Text = "Type street name here!"
-        End If
-        If txtTownCity.Text = "" Then
+            'End If
+        ElseIf txtTownCity.Text = "" Then
             MessageBox.Show("You must enter your town/city name!")
             txtTownCity.Text = "Type town/city name here!"
-        End If
-        If txtPostCode.Text = "" Then
+            'End If
+        ElseIf txtPostCode.Text = "" Then
             MessageBox.Show("You must enter your post code!")
             txtPostCode.Text = "Type post code here!"
-        End If
-        If txtEmail.Text = "" Then
+            'End If
+        ElseIf txtEmail.Text = "" Then
             MessageBox.Show("You must enter your email address!")
             txtEmail.Text = "Type your email here!"
-        End If
-        If txtCreditCardNo.Text = "" Then
+            'End If
+        ElseIf txtCreditCardNo.Text = "" Then
             MessageBox.Show("You must enter your 16 digit credit card number!")
             txtCreditCardNo.Text = "1234123412341234"
         End If
@@ -54,8 +54,10 @@
         End If
 
 
-
-
+        Dim newFile As String = "C:\Users\EINSTEIN\Desktop\Receipt\KitchenReceipt.txt"
+        Dim file1 As New IO.StreamWriter(newFile, True)
+        file1.WriteLine("Example")
+        file1.Close()
 
 
         'Creating variable that holds streamwriter that allows user to create files and edit them as well as open files in custom directories
@@ -122,7 +124,7 @@
 
 
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click, Label12.Click
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
 
     End Sub
 
